@@ -3,11 +3,10 @@
 
 
 .cart-item{
-    font-size: smaller;
-   box-sizing: content-box;
-}
+    font-size: small;
+   }
 .list-group{
-    font-size: inherit;
+    font-size: small;
 }
 
 .filters{
@@ -15,18 +14,19 @@
 }
 
 .card{
-    border-radius: 1em;
+    border-radius: 0em;
 }
 
 .form-control{
-    border-radius: 0.9em;}
+    border-radius: 0em;}
 
  .btn-filter{
-    border-radius: 10em;
+    border-radius: 1em;
 }
 
 .btn{
     border-radius: 1em; 
+    font-size: small;
 }
 
 .list-group-item:first-child{
@@ -40,7 +40,7 @@
   }
 
   .product-btn{
-    font-size: smaller;
+    font-size: xx-small;
 }
 
  

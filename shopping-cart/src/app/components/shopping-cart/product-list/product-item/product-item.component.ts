@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Product } from 'src/app/models/product';
 import { MessengerService } from 'src/app/services/messenger.service'
-import { from } from 'rxjs';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-product-item',
@@ -12,13 +12,17 @@ export class ProductItemComponent implements OnInit {
 
   @Input() productItem: Product
 
-  constructor(private msg: MessengerService) { }
+  constructor(
+    private msg: MessengerService,
+    private cartservice: CartService) { }
 
   ngOnInit(): void {
   }
 
   handleAddToCart() {
+    this.cartservice.addProductToCart(this.productItem).subscribe(() => {
     this.msg.sendMsg(this.productItem)
-  }
+  })
+}
 
 }

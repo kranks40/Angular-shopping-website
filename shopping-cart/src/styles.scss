@@ -3,15 +3,30 @@
 
 
 .cart-item{
-    font-size: small;
+    font-size: smaller;
+   box-sizing: content-box;
+}
+.list-group{
+    font-size: inherit;
 }
 
 .filters{
     font-size: small;
 }
 
-.card, .form-control, .btn{
-    border-radius: 0em;
+.card{
+    border-radius: 1em;
+}
+
+.form-control{
+    border-radius: 0.9em;}
+
+ .btn-filter{
+    border-radius: 10em;
+}
+
+.btn{
+    border-radius: 1em; 
 }
 
 .list-group-item:first-child{
@@ -23,5 +38,9 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;  
   }
+
+  .product-btn{
+    font-size: smaller;
+}
 
  
